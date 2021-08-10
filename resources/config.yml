@@ -1,0 +1,7 @@
+mysql:
+  host: 0.0.0.0
+  user: root
+  password: root
+  name: server
+urls:
+  banAppeal: https://localhost/id0000
