@@ -71,9 +71,9 @@ public class PlayerEvents implements Listener
                 rs = stmt.executeQuery(query);
                 rs.next();
                 int lvl = rs.getInt(4);
-                int exp = rs.getInt(5);
+                float exp = rs.getFloat(5);
                 player.setLevel(lvl);
-                player.setExp(0.1f);
+                player.setExp(exp);
             }
         }
         catch (SQLException sqlEx)

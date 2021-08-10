@@ -33,7 +33,6 @@ public class Main extends JavaPlugin {
             // Commands and Events
             getServer().getPluginManager().registerEvents(new PlayerEvents(), this);
             getCommand("level").setExecutor(new Commands());
-            getCommand("fly").setExecutor(new Commands());
         } catch (SQLException sqlEx) {
             this.getLogger().warning("[MySQL] Connection Error: " + sqlEx.getMessage());
             this.getServer().shutdown();

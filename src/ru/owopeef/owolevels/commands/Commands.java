@@ -74,21 +74,6 @@ public class Commands implements CommandExecutor
                 }
             }
         }
-        if (cmd.getName().equalsIgnoreCase("fly"))
-        {
-            if (player.isFlying())
-            {
-                player.setAllowFlight(false);
-                player.setFlying(false);
-                sender.sendMessage("§cРежим полёта был выключён!");
-            }
-            else
-            {
-                player.setAllowFlight(true);
-                player.setFlying(true);
-                sender.sendMessage("§aРежим полёта был включён!");
-            }
-        }
         return true;
     }
 }

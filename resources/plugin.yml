@@ -6,6 +6,3 @@ commands:
     description: Get level.
     usage: /<command>
     aliases: lvl
-  fly:
-    description: Turn on or off flying mode.
-    usage: /<command>

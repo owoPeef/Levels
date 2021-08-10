@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS `server` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `server`;
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE IF NOT EXISTS `users` (
+  `user_id` int NOT NULL AUTO_INCREMENT,
+  `uuid` varchar(500) COLLATE utf8_bin NOT NULL,
+  `nickname` varchar(500) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `level` int NOT NULL DEFAULT '0',
+  `xp` float NOT NULL DEFAULT '0',
+  PRIMARY KEY (`user_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3 COLLATE=utf8_bin;
